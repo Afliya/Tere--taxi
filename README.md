@@ -1,1 +1,3 @@
 # Tere--taxi
+
+Adaptive layout
