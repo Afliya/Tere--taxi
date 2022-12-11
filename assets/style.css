@@ -1,17 +1,17 @@
-body {
+.wrapper {
     font-family: 'Roboto', sans-serif;
-    width: 1200px;
-    margin-inline: auto;
+    margin: 20px;
 }
 
-main {
+.main {
     background-color: hsl(200, 99%, 98%);
+    padding-bottom: 5vh;
 }
 
 .container1 {
     display: grid;
-    grid-template-columns: 25% 1fr 20%;
-    margin: 30px; 
+    grid-template-columns: 25% 1fr 20% 3%;
+    height: 15vh;
     align-items: center;
     justify-content: center;
 }
@@ -21,14 +21,14 @@ main {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-} 
+}
 
 li {
     margin-left: 15px;
     margin-right: 15px;
     font-style: normal;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 1.7vh;
     line-height: 20px;
 }
 
@@ -37,18 +37,17 @@ a {
 }
 
 .logo {
-    width: 180px;
-    height: 51px;
+    max-width: 100%;
 }
 
 .button1 {
     background: #75BF7A;
-    width: 182px;
-    height: 50px;
+    width: 80%;
+    height: 7vh;
     border-radius: 5.95238px;
     border: #75BF7A;
     color: white;
-    font-size: larger;
+    font-size: 1.5vw;
 }
 
 .helpcenter {
@@ -56,55 +55,60 @@ a {
     justify-content: flex-end;
 }
 
+.burdermenu {
+    width: 10vw;
+    display: none;
+}
+
 .container2 {
-    height: 850px;
+    height: 100vh;
     margin: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 82% 1fr;
-    
 }
 
 .middlepart {
     display: grid;
-    grid-template-rows: 50% 1fr 1fr; 
+    grid-template-rows: 50% 1fr 1fr;
 }
 
 .headingtext {
-    width: 557px;
-    height: 270px;      
-    font-size: 60px;
-    line-height: 66px;
+    width: 33vw;
+    height: 50%;
+    font-size: 3.5vw;
+    line-height: 9vh;
     font-weight: bolder;
 }
 
 .text {
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    width: 550px;
-    height: 150px;
+    font-size: 1.5vw;
+    line-height: 4vh;
+    width: 33vw;
+    height: 20vh;
     color: #9E9DA2;
 }
 
 .buttons {
     display: flex;
-    
 }
 
 .button2 {
-    width: 260px;
-    height: 60px;
-    margin-right: 15px;
+    width: 30%;
+    height: 8vh;
+    margin-right: 20px;
 }
 
 .mainphoto {
-    z-index: -1; 
+    z-index: -1;
+    height: 110vh;
 }
 
 .green_area {
     grid-area: 2/1/3/3;
+    height: 20vh;
     background-color: #75BF7A;
     border-radius: 10px;
     display: flex;
@@ -113,43 +117,41 @@ a {
 }
 
 .text2 {
-    width: 246px;
-    height: 56px;
+    width: 25%;
     font-style: normal;
     font-weight: 600;
-    font-size: 24.6006px;
-    line-height: 28px;
+    font-size: 1.5vw;
+    line-height: 3.7vh;
     color: white;
-    margin-right: 100px;
 }
 
 .inputarea {
-    width: 450px;
-    height: 55px;
+    width: 40%;
+    height: 40%;
     margin-right: 10px;
     border-radius: 4.39297px;
     border-color: white;
 }
 
 .submit {
-    width: 230px;
-    height: 55px;
+    width: 20%;
+    height: 40%;
     background: #000000;
     border-radius: 4.39297px;
-    color: white;  
+    color: white;
     font-style: normal;
     font-weight: 800;
-    font-size: 22px;
-    line-height: 0px;
+    font-size: 1.6vw;
+    line-height: 1vh;
 }
 
 .container3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 30% 1fr;
+    grid-template-rows: 30% 1fr 1fr;
     margin-top: 100px;
     margin-left: 30px;
-    height: 900px;
+    height: 120vh;
     gap: 10px;
 }
 
@@ -160,25 +162,26 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 40vh;
 }
 
 .heading {
     font-style: normal;
     font-weight: 800;
-    font-size: 46.3862px;
-    line-height: 50px;
+    font-size: 3vw;
+    line-height: 5vh;
     margin: 10px;
 }
 
 .text3 {
     font-style: normal;
     font-weight: 500;
-    font-size: 23px;
-    line-height: 26px;
+    font-size: 1.4vw;
+    line-height: 3.5vh;
     text-align: center;
     color: #9E9DA2;
-    width: 50%;
-    margin: 10px;
+    width: 45%;
+    margin: 20px;
 }
 
 .heading1,
@@ -187,9 +190,8 @@ a {
 .heading4 {
     font-style: normal;
     font-weight: 800;
-    font-size: 22px;
-    line-height: 50px;
-    margin: 10px;
+    font-size: 1.4vw;
+    line-height: 2vh;
 }
 
 .text4,
@@ -198,29 +200,28 @@ a {
 .text7 {
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.1vw;
+    line-height: 3.5vh;
     text-align: right;
     color: #9E9DA2;
-    width: 290px;
-    height: 91px;
+    width: 60%;
     margin: 10px;
 }
 
-.text6,
+.text5,
 .text7 {
     text-align: start;
 }
 
 .block1,
-.block2 {
+.block3 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin: 30px;
 }
 
-.block3,
+.block2,
 .block4 {
     display: flex;
     flex-direction: column;
@@ -232,53 +233,54 @@ a {
 .number2,
 .number3,
 .number4 {
-    width: 60.82px;
-    height: 60.82px;   
+    width: 10%;
+    height: 15%;
 }
 
 .images {
+    grid-area: 2/2/4/3;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .greencircle {
-    z-index: -1;
     position: absolute;
-    width: 400px;
-    height: 400px;
-    top: 1320px;
+    top: 15%;
+    max-width: 100%;
 }
 
 .phoneimage {
-    width: 278.98px;
-    height: 560px;
+    max-width: 100%;
+    z-index: 1;
 }
 
+
+
 .dots {
-    width: 65px;
-    height: 12.77px;        
+    max-width: 100%;
 }
 
 .terebenefits {
     font-style: normal;
     font-weight: 800;
-    font-size: 46.3862px;
-    line-height: 50px;
+    font-size: 3vw;
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    align-items: flex-end;
+    height: 30vh;
 }
 
 .container4 {
-    display: grid;
-    grid-template-columns: 1fr 30%;
-    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    height: 40vh;
     align-items: center;
     background-color: white;
-    margin: 50px;
-    margin-right: 150px;
+    margin-left: 5vw;
+    width: 80vw;
 }
 
 .benefits1 {
@@ -286,9 +288,7 @@ a {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    height: 300px;
-    box-sizing: border-box;
-    padding-left: 30px;
+    height: 80%;
 }
 
 .wrapper1 {
@@ -297,74 +297,82 @@ a {
 
 .one {
     color: #75BF7A;
-    font-size: 80px;
+    font-size: 5vw;
+    line-height: 6vh;
 }
 
 .flexiblehours {
     font-style: normal;
     font-weight: 600;
-    font-size: 33px;
+    font-size: 2vw;
+    line-height: 5vh;
     display: flex;
     align-items: center;
-    width: 220px;
-    padding-left: 10px;
+    width: 65%;
+    padding-left: 1vw;
 }
 
 .text8 {
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    transform: translateY(-80px);
-    width: 360px;
+    font-size: 1.5vw;
+    line-height: 4vh;
+    transform: translateY(-90%);
+    width: 65%;
+}
+
+.image3 {
+    max-width: 100%;
 }
 
 .image2 {
-    padding-left: 30px;
+    max-width: 100%;
+}
+
+.image1 {
+    max-width: 100%;
 }
 
 .container5 {
-    display: grid;
-    grid-template-columns: 60% 1fr;
-    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    height: 40vh;
+    width: 80vw;
     align-items: center;
     background-color: white;
-    margin: 50px;
-    margin-left: 150px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 10vw;
 }
 
 .container6 {
-    display: grid;
-    grid-template-columns: 70% 1fr;
-    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    height: 40vh;
     align-items: center;
     background-color: white;
-    margin: 50px;
-    margin-right: 150px;
+    margin-left: 5vw;
+    width: 80vw;
 }
 
 .text10 {
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    transform: translateY(-80px);
-    width: 510px;
-}
-
-.image3 {
-    padding-right: 30px; 
+    font-size: 1.5vw;
+    line-height: 4vh;
+    transform: translateY(-65%);
+    width: 35vw;
 }
 
 .footer {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin: 30px;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    gap: 5px;
 }
 
 .logo2 {
     width: 131px;
-    height: 37.12px;            
+    height: 37.12px;
 }
 
 .address {
@@ -375,9 +383,14 @@ a {
     font-weight: 600;
 }
 
+.buttons2 {
+    display: flex;
+    justify-content: space-around;
+}
+
 .button3 {
-    width: 178.51px;
-    height: 45.84px;
+    width: 45%;
+    height: 7vh;
 }
 
 a:hover {
@@ -398,4 +411,265 @@ a:hover {
 
 .submit:active {
     transform: translateY(4px);
+}
+
+@media screen and (max-width: 767px) {
+    .wrapper {
+        background-color: hsl(200, 99%, 98%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100vw;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        margin-right: 0;
+    }
+
+    .container1 {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .helpcenter {
+        display: none;
+    }
+
+    .burdermenu {
+        display: block;
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: column;      
+        height: max-content;
+    }
+
+    .middlepart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        order: 1;
+    }
+
+    .headingtext {
+        line-height: 5vh;
+        font-size: 10vw;
+        width: 90%;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+    }
+
+    .text {
+        font-size: 4.5vw;
+        width: 90%;
+        line-height: 3vh;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 7vh;
+        margin-left: 3vw;
+    }
+
+    .button2 {
+        width: 40vw;
+        height: max-content;
+    }
+
+    .mainphoto {
+        width: 80vw;
+        height: 50vh;
+        margin-bottom: 10vh;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .mainphotodiv {
+        order: -1;
+    }
+
+    .green_area {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 5px;
+        width: 90vw;
+        height: 30vh;
+    }
+
+    .text2 {
+        width: 80%;
+        font-size: 5vw;
+        
+    }
+
+    .inputarea {
+        width: 90%;
+        height: 15%;
+        border-color: #75BF7A;
+        margin: 0;
+    }
+
+    .submit {
+        height: 15%;
+        width: 90%;
+        margin: 0;
+        font-size: 4vw;
+    }
+
+    .container3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+
+    .howtereworks {
+        order: 1;
+    }
+
+    .heading {
+        font-size: 6vw;
+    }
+
+
+    .text3 {
+        font-size: 4vw;
+        width: 90vw;
+    }
+
+    .block1,
+    .block2,
+    .block3,
+    .block4 {
+        display: flex;
+        align-items: center;
+    }
+
+    .heading1,
+    .heading2,
+    .heading3,
+    .heading4 {
+        font-size: 4vw;
+    }
+
+    .text4,
+    .text5,
+    .text6,
+    .text7 {
+        font-size: 3.5vw;
+        width: 80vw;
+        text-align: center;
+    }
+
+    .images {
+        order: 2;
+    }
+
+    .block1 {
+        order: 3;
+    }
+
+    .block3 {
+        order: 4;
+    }
+
+    .block2 {
+        order: 5;
+    }
+
+    .block4 {
+        order: 6;
+    }
+
+    .terebenefits {
+        font-size: 4vw;
+    }
+
+    .container4,
+    .container6,
+    .container5 {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 9vw;
+        padding-bottom: 5vh;
+    }
+
+    .benefits1 {
+        display: flex;
+        align-items: center;
+    }
+
+    .benefits2 {
+        order: -1;
+    }
+
+    .wrapper1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+
+    .one {
+        font-size: 10vw;
+    }
+
+    .flexiblehours {
+        font-size: 4vw;
+        line-height: 2.5vh;
+    }
+
+    .text8,
+    .text10 {
+        font-size: 2.5vw;
+        line-height: 2vh;
+        transform: 0;
+        text-align: center;
+        width: 60vw;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo2 {
+        margin: 3vh;
+    }
+
+    .buttons2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        width: 80vw;
+        height: 10vh;
+        gap: 10px;
+        padding-bottom: 5vh;
+    }
+
+    .beourfriend {
+        text-align: center;
+    }
+
+    .address {
+        text-align: center;
+    }
 }
